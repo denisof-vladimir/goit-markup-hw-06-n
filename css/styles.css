@@ -145,7 +145,21 @@ img{display: block;
     display: flex;
     align-items: center;
     gap: 24px;
-    justify-content: center;}
+    justify-content: center;} 
+
+.main-email-tel{
+    /* font-size: 16px; */
+    /* line-height: 1.5; */
+    /* letter-spacing: 0.02em; */
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
+    color: var(--color-main-menu);
+    margin-right: auto;
+    transition: color 250ms var(--timing-function);}
+.main-email-tel:hover,
+.main-email-tel:focus {
+    color: var(--color-focus-blu);}
 
 .main-section-first {
     /* padding-left: 15px; */
@@ -161,6 +175,14 @@ img{display: block;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-mob-с.jpg);
+    }
+@media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+    .main-section-first {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-mob-c-2x.jpg);}
     }
 
 .visually-hidden {
@@ -267,8 +289,7 @@ img{display: block;
 }
 .second-li {
     /* flex-basis: calc((100% - 72px) / 4); */
-    /* flex-basis:100%; */
-    flex-basis: 320px;
+    flex-basis:100%;
 }
 .third-li{
     flex-basis: calc((100% - 48px) / 3);}
@@ -638,7 +659,7 @@ img{display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
+    width: 320px;
     min-height: 584px;
 
     padding: 72px 24px 24px 24px;
