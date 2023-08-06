@@ -30,23 +30,11 @@
             (min-resolution:192dpi), 
             (min-resolution:2dppx) {
         .main-section-first {
+            max-width: 768px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-tab-c-2x.jpg);} 
-
-    .main-section-first {
-        max-width: 768px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/people-office.jpg);    }
-
-    @media (min-device-pixel-ratio: 2),
-            (min-resolution:192dpi), 
-            (min-resolution:2dppx) {
-        .main-section-first {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                    url(../images/people-office-c-2x.jpg);} }   
+                url(../images/people-office-tab-c-2x.jpg);} }
+ 
     .main-h-first {
         font-size: 56px;
         line-height: 1.07;
