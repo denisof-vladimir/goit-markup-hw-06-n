@@ -48,7 +48,8 @@
     .customer-item-five {
         flex-basis: calc((100% - 48px) / 3); }
     .footer-class {
-            max-width: 768px;  }
+        max-width: 768px; 
+        flex-direction: row; }
     .section-portfolio {
         max-width: 768px;  }
     .portfolio-li {
@@ -58,9 +59,10 @@
         align-items: center;
         gap: 40px;}
     .flex-container-four {
+        flex-direction: row;
         row-gap: 64px;}
     .flex-container-five {
-        gap: 24px;}
+        gap: 72px 24px;}
     .main-adress {
         display: block;}
     .mob-menu { display: none;}
@@ -71,14 +73,36 @@
     .modal {
         width: 408px;}
     .footer-first-block {
-        align-items: flex-start;}
+        align-items: flex-start;
+        margin-left: 80px; 
+       }
+    .footer-second-block {
+        align-items: flex-start;
+        /* margin-right: 80px;    */
+     }
+     .footer-third-block {
+        align-items: flex-start;
+        margin-left: 80px;
+     }
+     
+    .all-div-subscribe-class {
+        flex-direction: row;}
+
+    .main-section-four {
+       /* padding: 120px 0; */
+       min-width: 582px;
+    }
+    .main-section-five {
+       /* padding: 120px 0; */
+       min-width: 582px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;  }
     .main-section-first {
-        max-width: 1158px;
+        max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -101,7 +125,26 @@
         flex-basis: calc((100% - 120px) / 6);  }
 
     .footer-class {
-        max-width: 1158px;  }
+        max-width: 1440px; 
+        justify-content: space-between;
+        gap: 0; }
+
+    .footer-first-block {
+        /* align-items: flex-start; */
+        /* margin-left: 120px; */
+    }
+
+    .footer-second-block {
+        /* align-items: flex-start; */
+        /* margin-left: 120px; */
+        margin-left: 0px;
+      }
+
+    .footer-third-block {
+        /* align-items: flex-start; */
+        /* margin-left: 80px; */
+        margin-left: 0px;
+    }
 
     .section-portfolio {
         max-width: 1158px; }
@@ -131,7 +174,8 @@
     .main-section-four {
        padding: 120px 0;}
     .main-section-five {
-       padding: 120px 0; }
+       padding: 120px 0;
+        min-width: 1158px; }
 .adr-container {
     display: flex;
     gap: 40px;}
